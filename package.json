@@ -1,0 +1,30 @@
+{
+  "name": "rentatwo4",
+  "version": "2.0.0",
+  "description": "backend api v4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "lab -c ./test/e2e",
+    "jscs": "jscs index.js",
+    "jshint": "jshint index.js"
+  },
+  "homepage": "https://whisher@bitbucket.org/whisher/rentatwo4.git",
+  "bugs": "https://whisher@bitbucket.org/whisher/rentatwo4.git/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:whisher/rentatwo4.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "hapi",
+    "jwt"
+  ],
+  "author": "whisher",
+  "private": "true",
+  "dependencies": {
+    "hapi": "^10.4.0"
+  },
+  "devDependencies": {}
+}
