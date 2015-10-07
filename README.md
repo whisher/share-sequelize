@@ -1,11 +1,20 @@
-# README #
-Rest api
+# Rentatwo rest api
 
-### Commands
-npm start
-npm test
-npm run jscs
-npm run jshint
-pm2-dev run index.js
+## Install
+* npm install
+
+## Commands
+* npm start
+* npm test
+* npm run jscs
+* npm run jshint
+
+## Heroku
+* https://rentatwo.herokuapp.com/ | https://git.heroku.com/rentatwo.git
+
+
+
+
+
 
 
