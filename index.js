@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Set up config.
+ * Module dependencies.
  */
 var Hapi = require('hapi');
 

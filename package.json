@@ -7,7 +7,8 @@
     "start": "node index.js",
     "test": "lab -c ./test/e2e",
     "jscs": "jscs index.js",
-    "jshint": "jshint index.js"
+    "jshint": "jshint index.js",
+    "migrate": "NODE_ENV=development sequelize db:migrate"
   },
   "homepage": "https://whisher@bitbucket.org/whisher/rentatwo4.git",
   "bugs": "https://whisher@bitbucket.org/whisher/rentatwo4.git/issues",
@@ -24,7 +25,11 @@
   "author": "whisher",
   "private": "true",
   "dependencies": {
-    "hapi": "^10.4.0"
+    "hapi": "^10.4.0",
+    "pg": "^4.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.11.0",
+    "sequelize-cli": "^1.9.1"
   },
   "devDependencies": {}
 }
