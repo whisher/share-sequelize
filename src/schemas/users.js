@@ -5,7 +5,7 @@ module.exports = {
     definition : function(DataTypes)  {
         return {
             userId: {
-                type: DataTypes.INTEGER.UNSIGNED,
+                type: DataTypes.INTEGER,
                 autoIncrement: true,
                 primaryKey: true,
             },
@@ -17,24 +17,6 @@ module.exports = {
                 type: DataTypes.STRING,
                 allowNull: false
 	},
-	username: {
-                type:DataTypes.STRING,
-                unique: true,
-                allowNull: false
-	},
-            email: {
-                type: DataTypes.STRING,
-                unique: true,
-                allowNull: false
-	},
-            password: {
-                type: DataTypes.STRING,
-                allowNull: false
-            },
-            roles: {
-                type: DataTypes.STRING,
-                allowNull: false
-            },
 	createdAt: {
                 type: DataTypes.DATE,
                 allowNull: false,

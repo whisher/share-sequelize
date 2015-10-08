@@ -3,24 +3,18 @@
 /**
  * Module dependencies.
  */
-var Hapi = require('hapi');
 
-// Create a server with a host and port
-var server = new Hapi.Server();
-server.connection({
-    port: process.env.PORT || 8080
-});
+var Models = require('./src/models');
+var  User = Models.users;
 
-// Add the route
-server.route({
-    method: 'GET',
-    path:'/',
-    handler: (request, reply) => {
-        reply('hello world');
-    }
-});
-
-// Start the server
-server.start( ( ) =>{
-    console.log('Server running at:', server.info.uri);
-});
+User
+    .findAll({
+        order: [['createdAt','DESC']],
+        attributes: ['userId', 'firstname', 'lastname']
+    })
+    .then(function(users) {
+        console.log(users[0].dataValues);
+    })
+    .catch(function(err){
+            console.error(err.message);
+    });
