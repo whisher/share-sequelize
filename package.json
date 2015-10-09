@@ -10,11 +10,11 @@
     "migrate": "NODE_ENV=development sequelize db:migrate",
     "migrate:prod": "NODE_ENV=production sequelize db:migrate"
   },
-  "homepage": "https://whisher@bitbucket.org/whisher/rentatwo4.git",
-  "bugs": "https://whisher@bitbucket.org/whisher/rentatwo4.git/issues",
+  "homepage": "https://github.com/whisher/share-sequelize",
+  "bugs": "https://github.com/whisher/share-sequelize/issues",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:whisher/rentatwo4.git"
+    "url": "https://github.com/whisher/share-sequelize.git"
   },
   "keywords": [
     "node",
